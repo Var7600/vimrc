@@ -3,20 +3,22 @@
 
 my config ``.vimrc`` file 
 
-- Basic : if you wanna simple minimal vim config copy this file ``vimrc`` into your ``~/.vimrc`` file.
 
 - Advance: if you wanna use Vim like a IDE this include a lot of useful plugins.
 
-## How to install plugins
 
-you need to install a plugin-managers to use those plugins lot of them
+# Installation
 
-- vim-plug
-- Pathogen
-- Vundle
+``git clone https://github.com/DD7600/vimrc ``
 
-I recommend to use ``vim-plug`` but you can use any plugin-managers
+``cd vimrc``
 
-link to install and how to use plugin-managers
+``./install.sh``
 
+
+
+by defaults this script install vim-plug by default if you wanna install another one click here
 [how-to-install-vim-plugins](https://opensource.com/article/20/2/how-install-vim-plugins )
+
+## Issue
+if there is any issues about installation please let me know
