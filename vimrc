@@ -25,7 +25,7 @@ set autoread
 set encoding=utf-8
 set showmatch " Show matching words during a search.
 
-"Colorscheme
+"change color theme
 ":colorscheme morning 
 ":colorscheme evening 
 ":colorscheme darkblue
