@@ -82,7 +82,6 @@ Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'gruvbox-community/gruvbox' "theme gruvbox
-Plug 'ap/vim-css-color' "color previews for css
 call plug#end()
 
 colorscheme gruvbox "change color theme
