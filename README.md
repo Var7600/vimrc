@@ -72,6 +72,10 @@ https://github.com/tpope/vim-commentary
 use to comments line inside vim
 type in vim
 
+``gc `` to comment line into the cursor
+
+``gcc`` to comment a selection
+
 ``:27,29Commentary``
 
 to comment line 27 to 29
