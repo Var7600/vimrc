@@ -23,9 +23,11 @@ by defaults this script install vim-plug by default if you wanna install another
 
 # Useful plugins already installed
 
-## awesome theme ``gruvobx``
+## enable awesome theme ``gruvobx`` by default
 
 ![gruvbox](images/gruvbox.png)
+
+## Dashborad
 
 https://github.com/junegunn/vim-github-dashboard.git
 Browse Github events (user dashboard,user/repo activity) in vim
