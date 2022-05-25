@@ -30,6 +30,8 @@ my config ``.vimrc`` file
 
 ``./install.sh``
 
+after plugins are install type ``:x`` to save and quit
+ 
 by default this script save your old config to ``~/.vimrc.save`` if you wanna use your old config file
 
 # RELEOAD OLD CONFIG
