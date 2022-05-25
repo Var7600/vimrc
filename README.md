@@ -15,6 +15,7 @@ my config ``.vimrc`` file
 
 ``./install.sh``
 
+by default this script save your old config to ``~/.vimrc.save`` if you wanna use your old config file
 
 
 by defaults this script install vim-plug by default if you wanna install another one click here
@@ -38,13 +39,15 @@ or
 ``:GHDashbord USER ``
 or 
 
-``GHActivity USER/REPO``
+``:GHActivity USER/REPO``
+
+more information [click-here](https://github.com/junegunn/vim-github-dashboard.git)
+
+## Commentary
 
 https://github.com/tpope/vim-commentary
 use to comments line inside vim
 type in vim
-
-## Commentary
 
 ``:27,29Commentary``
 
@@ -61,7 +64,7 @@ compile every time you save a file to see  errors on any type of file .c .cpp .h
 
 ![syntastic](images/syntastic.png)
 
-
+## javascript
 
 https://github.com/pangloss/vim-javascript.git javascript plugins provide syntax highlighting and improved indentation
 
