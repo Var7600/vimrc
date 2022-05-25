@@ -6,6 +6,8 @@ my config ``.vimrc`` file
 - Basic: basic add config
 
 ``enable line number``
+
+`` highlight cursor line ``
  
 ``undo file after save``
 
