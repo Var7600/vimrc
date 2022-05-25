@@ -3,6 +3,19 @@
 
 my config ``.vimrc`` file 
 
+- Basic: basic add config
+
+``enable line number``
+ 
+``undo file after save``
+
+``continue at the last spot the last time you open the file``
+
+``show matching words during search``
+
+``enable smarindent to indent your code``
+
+``Display all matching files with tab completion `` 
 
 - Advance: if you wanna use Vim like a IDE this include a lot of useful plugins.
 
@@ -70,10 +83,24 @@ compile every time you save a file to see  errors on any type of file .c .cpp .h
 
 https://github.com/pangloss/vim-javascript.git javascript plugins provide syntax highlighting and improved indentation
 
-# Plugins
+# More Plugins
 if you wanna see more plugins available for vim
 check [vim-plugins](https://github.com/gerardbm/vimrc)
 
+# How to add plugins
+open your vim config file ``~/.vimrc`` search for 
+``call plug#begin()`` and ``call plug#end`` and add your respository vim plugins
 
+like that
+ 
+``call plug#begin()``
+
+``Plug 'link to your plugin respository'``
+
+``Plug 'https://github.com/ap/vim-css-color'``
+
+``call plug#end``
+
+after saving your file  type ``:PlugInstall`` to install plugins
 ## Issues
 if there is any issues about installation please let me know
