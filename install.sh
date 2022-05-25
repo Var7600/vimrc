@@ -9,3 +9,6 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 #copy vimrc to ~/.vimrc and save old config to ~/.vimrc.save
 mv ~/.vimrc ~/.vimrc.save
 mv vimrc ~/.vimrc
+
+#install plugins
+vim -c 'PlugInstall'
