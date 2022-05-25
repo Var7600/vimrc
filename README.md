@@ -32,9 +32,13 @@ my config ``.vimrc`` file
 
 by default this script save your old config to ``~/.vimrc.save`` if you wanna use your old config file
 
+# RELEOAD OLD CONFIG
+you can reload your base config by running this script
 
-by defaults this script install vim-plug by default if you wanna install another one click here
-[how-to-install-vim-plugins](https://opensource.com/article/20/2/how-install-vim-plugins )
+``cd vimrc``
+
+``./old-config``
+
 
 # Useful plugins already installed
 
