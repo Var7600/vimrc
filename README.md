@@ -70,5 +70,10 @@ compile every time you save a file to see  errors on any type of file .c .cpp .h
 
 https://github.com/pangloss/vim-javascript.git javascript plugins provide syntax highlighting and improved indentation
 
+# Plugins
+if you wanna see more plugins available for vim
+check [vim-plugins](https://github.com/gerardbm/vimrc)
+
+
 ## Issues
 if there is any issues about installation please let me know
