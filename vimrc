@@ -18,14 +18,13 @@ set signcolumn=auto "add one more column to the left
 "set cursorcolumn "Highlight cursor line underneath the cursor vartically
 set smartindent
 set noerrorbells
-"set spell
 set smartcase
 set autoread
 "set list
 set encoding=utf-8
 set showmatch " Show matching words during a search.
 
-"change color theme
+"Colorscheme
 ":colorscheme morning 
 ":colorscheme evening 
 ":colorscheme darkblue
@@ -79,22 +78,11 @@ call plug#begin()
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'https://github.com/vim-airline/vim-airline-themes'
-Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'https://github.com/pangloss/vim-javascript.git' "javascript plugins provide syntax highlighting and improved indentation
 Plug 'gruvbox-community/gruvbox' "theme gruvbox
 call plug#end()
 
 colorscheme gruvbox "change color theme
-
-
-let g:airline#extensions#tabline#enabled = 1
-
-augroup project
-  autocmd!
-  autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
-augroup END
-
-"javascript plugins provide syntax highlighting and improved indentation
 
 " If Vim version is equal to or greater than 7.3 enable undofile.
 " This allows you to undo changes to a file even after saving it.
@@ -104,20 +92,31 @@ if version >= 703
     set undoreload=10000
 endif
 
+"let g:airline#extensions#tabline#enabled = 1
+
+augroup project
+  autocmd!
+  autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
+augroup END
+
+"javascript plugins provide syntax highlighting and improved indentation
+let g:javascript_plugin_jsdoc = 1 "Enables syntax highlight for JSDocs
+let g:javascript_plugin_ngdoc = 1 "Enables some additional syntac HG for NGDocs
+let g:javascript_plugin_flow = 1 "Enables syntax highlight for Flow
 " STATUS LINE ------------------------------------------------------------ {{{
 
 " Clear status line when vimrc is reloaded.
 set statusline=
 
 " Status line left side.
-set statusline+=\ %F\ %M\ %Y\ %R
+"set statusline+=\ %F\ %M\ %Y\ %R
 
 " Use a divider to separate the left side from the right side.
-set statusline+=%=
+"set statusline+=%=
 
 
 " Show the status on the second to last line.
-set laststatus=2
+"set laststatus=2
 
 " }}}
 
