@@ -91,6 +91,14 @@ compile every time you save a file to see  errors on any type of file .c .cpp .h
 
 ![syntastic](images/syntastic.png)
 
+## Python mode
+- Support Pyhton and 3.6+
+- Syntax highlighting
+- Run python code (<leader>r)
+- Code refactoring
+
+fore more information https://github.com/python-mode/python-mode
+
 ## javascript
 
 https://github.com/pangloss/vim-javascript.git javascript plugins provide syntax highlighting and improved indentation
