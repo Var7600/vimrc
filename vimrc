@@ -66,7 +66,8 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 
-
+"a man page viewer in vim
+runtime! ftplugin/man.vim
 
 """"""""""""""""""""""""""""""""""""""""""
 " => Vim-plug
@@ -79,7 +80,9 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/pangloss/vim-javascript.git' "javascript plugins provide syntax highlighting and improved indentation
+Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} "python mode on vim
 Plug 'gruvbox-community/gruvbox' "theme gruvbox
+Plug 'https://github.com/yegappan/mru' "open last recents files
 call plug#end()
 
 colorscheme gruvbox "change color theme
