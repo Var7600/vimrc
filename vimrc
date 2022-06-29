@@ -19,6 +19,7 @@ set signcolumn=auto "add one more column to the left
 set smartindent
 set noerrorbells
 set smartcase
+set wrap "wrap line
 set autoread
 "set list
 set encoding=utf-8
@@ -78,11 +79,13 @@ runtime! ftplugin/man.vim
 call plug#begin()
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'https://github.com/tpope/vim-commentary'
-Plug 'https://github.com/vim-airline/vim-airline'
+"Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/pangloss/vim-javascript.git' "javascript plugins provide syntax highlighting and improved indentation
 Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} "python mode on vim
 Plug 'gruvbox-community/gruvbox' "theme gruvbox
 Plug 'https://github.com/yegappan/mru' "open last recents files
+Plug 'scrooloose/syntastic'
+
 call plug#end()
 
 colorscheme gruvbox "change color theme
