@@ -36,6 +36,9 @@ set shiftwidth=4 "number of spaces to use for indenting
 set softtabstop=4 "number of tabs to use for indenting
 set tabstop=4
 
+"collapse/expand code
+set foldmethod=indent
+set foldlevel=15 "commad za/zm
 
 filetype plugin on
 
@@ -85,7 +88,8 @@ Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} "python m
 Plug 'gruvbox-community/gruvbox' "theme gruvbox
 Plug 'https://github.com/yegappan/mru' "open last recents files
 Plug 'scrooloose/syntastic'
-
+" A Vim Plugin for Lively Previewing LaTeX PDF Output
+Plug 'xuhdev/vim-latex-live-preview'
 call plug#end()
 
 colorscheme gruvbox "change color theme
