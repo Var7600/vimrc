@@ -32,9 +32,9 @@ set showmatch " Show matching words during a search.
 
 
 
-set shiftwidth=4 "number of spaces to use for indenting
-set softtabstop=4 "number of tabs to use for indenting
-set tabstop=4
+set shiftwidth=2 "number of spaces to use for indenting
+set softtabstop=2 "number of tabs to use for indenting
+set tabstop=2
 
 "collapse/expand code
 set foldmethod=indent
