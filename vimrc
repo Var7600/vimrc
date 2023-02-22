@@ -29,7 +29,7 @@ set showmatch " Show matching words during a search.
 ":colorscheme morning 
 ":colorscheme evening 
 ":colorscheme darkblue
-
+":colorscheme desert
 
 
 set shiftwidth=2 "number of spaces to use for indenting
@@ -97,6 +97,7 @@ call plug#end()
 "let g:floaterm_keymap_new= '<>'
 let g:floaterm_keymap_toggle= '<C-t>'
 let g:floaterm_width=0.8
+let g:floaterm_autoclose=2
 
 
 colorscheme gruvbox "change color theme
