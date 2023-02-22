@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#vim directory
+mkdir ~/.vim && mkdir ~/.vim/autoload
+
+git clone https://github.com/tpope/vim-pathogen.git > ~/.vim/autoload/
+
 #install plugin manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs\
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
