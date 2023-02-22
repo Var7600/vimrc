@@ -90,7 +90,14 @@ Plug 'https://github.com/yegappan/mru' "open last recents files
 Plug 'scrooloose/syntastic'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
 Plug 'xuhdev/vim-latex-live-preview'
+Plug 'https://github.com/voldikss/vim-floaterm'
 call plug#end()
+
+"floaterm mapping
+"let g:floaterm_keymap_new= '<>'
+let g:floaterm_keymap_toggle= '<C-t>'
+let g:floaterm_width=0.8
+
 
 colorscheme gruvbox "change color theme
 
