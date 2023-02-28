@@ -21,15 +21,32 @@ set noerrorbells
 set smartcase
 set wrap "wrap line
 set autoread
+set spell
 "set list
 set encoding=utf-8
 set showmatch " Show matching words during a search.
+
+"move lines with ctrl + j/k
+nnoremap <C-j> :m +1<CR>
+nnoremap <C-k> :m -2<CR>
+"buffer
+"open buffer
+nmap <C-t> :enew<CR>
+"move to next buffer
+nmap <C-n> :bnext<CR>
+"move to previous buffer
+nmap <C-b> :bprevious<CR>
+"close the current buffer
+nmap <C-x> :bd<CR>
+"show all open buffers and their status
+nmap <C-l> :ls<CR>
 
 "Colorscheme
 ":colorscheme morning 
 ":colorscheme evening 
 ":colorscheme darkblue
-":colorscheme desert
+:colorscheme desert
+
 
 
 set shiftwidth=2 "number of spaces to use for indenting
@@ -80,16 +97,16 @@ runtime! ftplugin/man.vim
 "install plugins
 
 call plug#begin()
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'https://github.com/tpope/vim-commentary'
 "Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'https://github.com/pangloss/vim-javascript.git' "javascript plugins provide syntax highlighting and improved indentation
-Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} "python mode on vim
-Plug 'gruvbox-community/gruvbox' "theme gruvbox
-Plug 'https://github.com/yegappan/mru' "open last recents files
-Plug 'scrooloose/syntastic'
+"Plug 'https://github.com/pangloss/vim-javascript.git' "javascript plugins provide syntax highlighting and improved indentation
+"Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} "python mode on vim
+"Plug 'gruvbox-community/gruvbox' "theme gruvbox
+"Plug 'https://github.com/yegappan/mru' "open last recents files
+"Plug 'scrooloose/syntastic'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
-Plug 'xuhdev/vim-latex-live-preview'
+"Plug 'xuhdev/vim-latex-live-preview'
 Plug 'https://github.com/voldikss/vim-floaterm'
 call plug#end()
 
@@ -100,7 +117,7 @@ let g:floaterm_width=0.8
 let g:floaterm_autoclose=2
 
 
-colorscheme gruvbox "change color theme
+"colorscheme gruvbox "change color theme
 
 " If Vim version is equal to or greater than 7.3 enable undofile.
 " This allows you to undo changes to a file even after saving it.
