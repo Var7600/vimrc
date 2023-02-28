@@ -21,7 +21,6 @@ set noerrorbells
 set smartcase
 set wrap "wrap line
 set autoread
-set spell
 "set list
 set encoding=utf-8
 set showmatch " Show matching words during a search.
