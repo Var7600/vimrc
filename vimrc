@@ -15,7 +15,7 @@ set nrformats-=octal
 set mouse=a
 set cursorline "Highlight cursor line underneath the cursor horizontally 
 set signcolumn=auto "add one more column to the left
-"set cursorcolumn "Highlight cursor line underneath the cursor vartically
+"set cursorcolumn "Highlight cursor line underneath the cursor vertically
 set smartindent
 set noerrorbells
 set smartcase
@@ -26,8 +26,8 @@ set encoding=utf-8
 set showmatch " Show matching words during a search.
 
 "move lines with ctrl + j/k
-nnoremap <C-j> :m +1<CR>
-nnoremap <C-k> :m -2<CR>
+nnoremap <C-j> :m -2<CR>
+nnoremap <C-k> :m +1<CR>
 "buffer
 "open buffer
 nmap <C-t> :enew<CR>
