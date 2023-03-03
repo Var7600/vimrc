@@ -107,6 +107,7 @@ Plug 'https://github.com/tpope/vim-commentary'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
 "Plug 'xuhdev/vim-latex-live-preview'
 Plug 'https://github.com/voldikss/vim-floaterm'
+Plug 'https://github.com/godlygeek/tabular' "Tabular align pattern
 call plug#end()
 
 "floaterm mapping
