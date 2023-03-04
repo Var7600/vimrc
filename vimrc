@@ -96,16 +96,16 @@ runtime! ftplugin/man.vim
 "install plugins
 
 call plug#begin()
-"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'https://github.com/tpope/vim-commentary'
-"Plug 'https://github.com/vim-airline/vim-airline'
-"Plug 'https://github.com/pangloss/vim-javascript.git' "javascript plugins provide syntax highlighting and improved indentation
-"Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} "python mode on vim
-"Plug 'gruvbox-community/gruvbox' "theme gruvbox
-"Plug 'https://github.com/yegappan/mru' "open last recents files
-"Plug 'scrooloose/syntastic'
+Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/pangloss/vim-javascript.git' "javascript plugins provide syntax highlighting and improved indentation
+Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} "python mode on vim
+Plug 'gruvbox-community/gruvbox' "theme gruvbox
+Plug 'https://github.com/yegappan/mru' "open last recents files
+Plug 'scrooloose/syntastic'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
-"Plug 'xuhdev/vim-latex-live-preview'
+Plug 'xuhdev/vim-latex-live-preview'
 Plug 'https://github.com/voldikss/vim-floaterm'
 Plug 'https://github.com/godlygeek/tabular' "Tabular align pattern
 call plug#end()

@@ -1,2 +1,2 @@
 #! /bin/bash
-vim -c 'PlugUpdate'
+vim -c 'PlugUpdate' #update plugins
