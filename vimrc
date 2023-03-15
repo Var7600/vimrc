@@ -108,6 +108,8 @@ Plug 'scrooloose/syntastic'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'https://github.com/voldikss/vim-floaterm'
 Plug 'https://github.com/godlygeek/tabular' "Tabular align pattern
+Plug 'junegunn/fzf',{ 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "floaterm mapping
@@ -116,6 +118,8 @@ let g:floaterm_keymap_toggle= '<C-t>'
 let g:floaterm_width=0.8
 let g:floaterm_autoclose=2
 
+"fzf mapping
+nnoremap <C-e> :Files<Cr>
 
 "colorscheme gruvbox "change color theme
 
