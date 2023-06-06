@@ -87,6 +87,8 @@ https://github.com/vim-airline/vim-airline give information about the file path,
 ![airline](images/airline.png)
 
 ## syntastic
+https://github.com/vim-syntastic/syntastic
+
 compile every time you save a file to see  errors on any type of file .c .cpp .html .java .py . . .
 
 ![syntastic](images/syntastic.png)
