@@ -24,7 +24,8 @@ set autoread
 "set list
 set encoding=utf-8
 set showmatch " Show matching words during a search.
-
+set foldmethod=indent " adding folding
+set foldlevel=99
 "move lines with ctrl + j/k
 nnoremap <C-j> :m -2<CR>
 nnoremap <C-k> :m +1<CR>
