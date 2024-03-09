@@ -77,10 +77,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 "this will enable code folding.
 " Use the marker method of folding.
@@ -121,13 +117,31 @@ Plug 'https://github.com/voldikss/vim-floaterm'
 Plug 'https://github.com/godlygeek/tabular' "Tabular align pattern
 Plug 'junegunn/fzf',{ 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+"VHDL tool
+Plug 'http://git.vhdltool.com/vhdl-tool/syntastic-vhdl-tool'
+
 call plug#end()
+
+"plug config
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+"javascript plugins provide syntax highlighting and improved indentation
+let g:javascript_plugin_jsdoc = 1 "Enables syntax highlight for JSDocs
+let g:javascript_plugin_ngdoc = 1 "Enables some additional syntac HG for NGDocs
+let g:javascript_plugin_flow = 1 "Enables syntax highlight for Flow
+let g:syntastic_vhdl_checkers = ['vhdltool']
 
 "floaterm mapping
 "let g:floaterm_keymap_new= '<>'
 let g:floaterm_keymap_toggle= '<C-t>'
 let g:floaterm_width=0.8
 let g:floaterm_autoclose=2
+
+"end plug config
+
 
 "fzf mapping
 nnoremap <C-e> :Files<Cr>
@@ -149,10 +163,6 @@ augroup project
   autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
 augroup END
 
-"javascript plugins provide syntax highlighting and improved indentation
-let g:javascript_plugin_jsdoc = 1 "Enables syntax highlight for JSDocs
-let g:javascript_plugin_ngdoc = 1 "Enables some additional syntac HG for NGDocs
-let g:javascript_plugin_flow = 1 "Enables syntax highlight for Flow
 " STATUS LINE ------------------------------------------------------------ {{{
 
 " Clear status line when vimrc is reloaded.
