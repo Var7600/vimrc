@@ -21,17 +21,19 @@ set noerrorbells
 set smartcase
 set wrap "wrap line
 set autoread
+set hidden "when using buffer save current changes
 "set list
 set encoding=utf-8
 set showmatch " Show matching words during a search.
-set foldmethod=indent " adding folding
+set foldmethod=indent
 set foldlevel=99
+
 "move lines with ctrl + j/k
 nnoremap <C-j> :m -2<CR>
 nnoremap <C-k> :m +1<CR>
 "buffer
 "open buffer
-nmap <C-t> :enew<CR>
+nmap <C-e> :enew<CR>
 "move to next buffer
 nmap <C-n> :bnext<CR>
 "move to previous buffer
@@ -55,6 +57,8 @@ set tabstop=2
 
 "collapse/expand code
 set foldmethod=indent
+set foldlevel=15 "commad za/zm
+
 filetype plugin on
 
 "Search down into subfolders
@@ -63,12 +67,6 @@ set path+=**
 
 "Display all matching files when tab complete
 set wildmenu
-"set wildmenu behave like similar to Bash completion.
-set wildmode=list:longest
-
-" There are certain files that we would never want to edit with Vim.
-" " Wildmenu will ignore files with these extensions.
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsxet foldlevel=15 "commad za/zm
 
 "plugin syntastic
 execute pathogen#infect()
@@ -77,13 +75,11 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
-"this will enable code folding.
-" Use the marker method of folding.
-augroup filetype_vim
-     autocmd!
-         autocmd FileType vim setlocal foldmethod=marker
-augroup END
 
 "create the tags file (may need to install ctags first)
 "command! MakeTags !ctags -R
@@ -117,21 +113,7 @@ Plug 'https://github.com/voldikss/vim-floaterm'
 Plug 'https://github.com/godlygeek/tabular' "Tabular align pattern
 Plug 'junegunn/fzf',{ 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
 call plug#end()
-
-"end plugins
-
-"plug config
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-"javascript plugins provide syntax highlighting and improved indentation
-let g:javascript_plugin_jsdoc = 1 "Enables syntax highlight for JSDocs
-let g:javascript_plugin_ngdoc = 1 "Enables some additional syntac HG for NGDocs
-let g:javascript_plugin_flow = 1 "Enables syntax highlight for Flow
 
 "floaterm mapping
 "let g:floaterm_keymap_new= '<>'
@@ -139,11 +121,8 @@ let g:floaterm_keymap_toggle= '<C-t>'
 let g:floaterm_width=0.8
 let g:floaterm_autoclose=2
 
-"end plug config
-
-
 "fzf mapping
-nnoremap <C-e> :Files<Cr>
+nnoremap <C-f> :Files<Cr>
 
 "colorscheme gruvbox "change color theme
 
@@ -162,6 +141,10 @@ augroup project
   autocmd BufRead,BufNewFile *.h,*.c set filetype=c.doxygen
 augroup END
 
+"javascript plugins provide syntax highlighting and improved indentation
+let g:javascript_plugin_jsdoc = 1 "Enables syntax highlight for JSDocs
+let g:javascript_plugin_ngdoc = 1 "Enables some additional syntac HG for NGDocs
+let g:javascript_plugin_flow = 1 "Enables syntax highlight for Flow
 " STATUS LINE ------------------------------------------------------------ {{{
 
 " Clear status line when vimrc is reloaded.
