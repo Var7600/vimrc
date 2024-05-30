@@ -49,6 +49,8 @@ nmap <C-l> :ls<CR>
 ":colorscheme darkblue
 :colorscheme desert
 
+"Ctags to look in cwd
+set tags=./tags;/
 
 
 set shiftwidth=2 "number of spaces to use for indenting
