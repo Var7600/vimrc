@@ -115,6 +115,7 @@ Plug 'https://github.com/voldikss/vim-floaterm'
 Plug 'https://github.com/godlygeek/tabular' "Tabular align pattern
 Plug 'junegunn/fzf',{ 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 "floaterm mapping
@@ -150,7 +151,7 @@ let g:javascript_plugin_flow = 1 "Enables syntax highlight for Flow
 " STATUS LINE ------------------------------------------------------------ {{{
 
 " Clear status line when vimrc is reloaded.
-set statusline=
+set statusline=%{FugitiveStatusline()}
 
 " Status line left side.
 "set statusline+=\ %F\ %M\ %Y\ %R
