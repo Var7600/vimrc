@@ -84,7 +84,7 @@ let g:syntastic_check_on_wq = 0
 
 
 "create the tags file (may need to install ctags first)
-"command! MakeTags !ctags -R
+command! MakeTags !ctags -R
 
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
