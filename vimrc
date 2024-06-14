@@ -35,9 +35,9 @@ nnoremap <C-k> :m +1<CR>
 "open buffer
 nmap <C-e> :enew<CR>
 "move to next buffer
-nmap <C-b> :bnext<CR>
+nmap <C-n> :bnext<CR>
 "move to previous buffer
-nmap <C-n> :bprevious<CR>
+nmap <C-b> :bprevious<CR>
 "close the current buffer
 nmap <C-x> :bd<CR>
 "show all open buffers and their status
