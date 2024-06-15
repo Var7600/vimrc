@@ -2,8 +2,27 @@
 "https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
 "plugin source https://github.com/gerardbm/vimrc
 
+
+"source vimrc after modification
+augroup vimrc
+	au!
+	au bufwritepost ~/.vimrc source ~/.vimrc
+augroup END
+
 syntax on " Turn syntax highlighting on.
 syntax enable
+"leader key
+let mapleader=","
+
+"check spelling
+nmap <silent> <leader>s :set spell!<CR> 
+set spelllang=en_us,fr
+"french Guillemets
+"imap <leader>g <<>>
+
+"clipboard
+set clipboard=unamedplus
+
 set nocompatible " Disable compatibility with vi which can cause unexpected issues.
 set hlsearch " Use highlighting when doing a search.  
 set nohlsearch "disable highlighting after search
@@ -11,6 +30,7 @@ set autoindent
 set incsearch " While searching though a file incrementally highlight matching characters as you type.
 set number "set line number
 set history=200 " Set the commands to save in history default number is 20.
+
 set nrformats-=octal
 set mouse=a
 set cursorline "Highlight cursor line underneath the cursor horizontally 
@@ -28,6 +48,7 @@ set showmatch " Show matching words during a search.
 set foldmethod=indent
 set foldlevel=99
 
+
 "move lines with ctrl + j/k
 nnoremap <C-j> :m -2<CR>
 nnoremap <C-k> :m +1<CR>
@@ -42,6 +63,11 @@ nmap <C-b> :bprevious<CR>
 nmap <C-x> :bd<CR>
 "show all open buffers and their status
 nmap <C-l> :ls<CR>
+
+"Makefile shorcuts
+nnoremap <leader>m :!make<CR>
+nnoremap <leader>M :!make all<CR><CR>
+nnoremap <leader>mt :!make test<CR>
 
 "Colorscheme
 ":colorscheme morning 
