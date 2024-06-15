@@ -45,8 +45,8 @@ set hidden "when using buffer save current changes
 "set list
 set encoding=utf-8
 set showmatch " Show matching words during a search.
-set foldmethod=indent
-set foldlevel=99
+set foldmethod=indent " adding folding
+set foldlevel=99 "commad za/zm
 
 
 "move lines with ctrl + j/k
@@ -56,9 +56,9 @@ nnoremap <C-k> :m +1<CR>
 "open buffer
 nmap <C-e> :enew<CR>
 "move to next buffer
-nmap <C-n> :bnext<CR>
+nmap <C-b> :bnext<CR>
 "move to previous buffer
-nmap <C-b> :bprevious<CR>
+nmap <C-n> :bprevious<CR>
 "close the current buffer
 nmap <C-x> :bd<CR>
 "show all open buffers and their status
@@ -85,7 +85,7 @@ set tabstop=2
 
 "collapse/expand code
 set foldmethod=indent
-set foldlevel=15 "commad za/zm
+
 
 filetype plugin on
 
