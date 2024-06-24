@@ -37,6 +37,7 @@ set mouse=a
 set cursorline "Highlight cursor line underneath the cursor horizontally 
 set signcolumn=auto "add one more column to the left
 "set cursorcolumn "Highlight cursor line underneath the cursor vertically
+set colorcolumn=80
 set smartindent
 set noerrorbells
 set smartcase
@@ -50,6 +51,9 @@ set foldmethod=indent " adding folding
 set foldlevel=99 "commad za/zm
 set timeoutlen=4000 "change timeout keymapping f 1s to 4s(4000 ms)
 
+"easier moving of block of code
+vnoremap < <gv "better indentation
+vnoremap > >gv "better indentation
 
 "move lines with ctrl + j/k
 nnoremap <C-j> :m -2<CR>
