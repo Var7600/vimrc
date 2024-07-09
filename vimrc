@@ -219,7 +219,11 @@ Plug 'junegunn/fzf',{ 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/taglist.vim'
+Plug 'preservim/tagbar' "browse the tags file
 call plug#end()
+
+"tagar 
+nmap <F8> :TagbarToggle<CR>
 
 " Show tags
 noremap t :TlistToggle
