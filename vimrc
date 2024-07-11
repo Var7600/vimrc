@@ -220,6 +220,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/taglist.vim'
 Plug 'preservim/tagbar' "browse the tags file
+Plug 'jiangmiao/auto-pairs' "auto close
 call plug#end()
 
 "tagar 
