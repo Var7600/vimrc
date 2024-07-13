@@ -50,7 +50,7 @@ set showmatch " Show matching words during a search.
 set foldmethod=indent " adding folding
 set foldlevel=99 "commad za/zm
 set timeoutlen=4000 "change timeout keymapping f 1s to 4s(4000 ms)
-
+set autowrite " Automatically save 
 "easier moving of block of code
 vnoremap < <gv "better indentation
 vnoremap > >gv "better indentation
@@ -221,6 +221,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/taglist.vim'
 Plug 'preservim/tagbar' "browse the tags file
 Plug 'jiangmiao/auto-pairs' "auto close
+Plug 'https://github.com/Var7600/vim-commands'
 call plug#end()
 
 "tagar 
