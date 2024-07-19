@@ -76,13 +76,13 @@ nnoremap <leader>M :!make all<CR><CR>
 nnoremap <leader>mt :!make test<CR>
 
 "Colorscheme
-":colorscheme morning 
-":colorscheme evening 
-":colorscheme darkblue
-:colorscheme desert
+"colorscheme morning 
+"colorscheme evening 
+"colorscheme darkblue
+"colorscheme desert
 
 "Ctags to look in cwd
-set tags=./tags;/
+set tags=./tags,tags
 
 
 set shiftwidth=2 "number of spaces to use for indenting
@@ -134,7 +134,7 @@ set cscopetag
 
 " check cscope for definition of a symbol before checking ctags: set to 1
 " if you want the reverse search order.
-set csto=0
+set csto=1
 
 " add any cscope database in current directory
 if filereadable("cscope.out")
@@ -251,7 +251,12 @@ let g:floaterm_autoclose=2
 "fzf mapping
 nnoremap <C-f> :Files<Cr>
 
-"colorscheme gruvbox "change color theme
+colorscheme gruvbox "change color theme
+
+"syntastic plugin error navigation
+nnoremap <silent> <leader>n :lprevious<CR>
+nnoremap <silent> <leader>m :lnext<CR>
+
 
 " If Vim version is equal to or greater than 7.3 enable undofile.
 " This allows you to undo changes to a file even after saving it.
