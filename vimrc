@@ -75,11 +75,20 @@ nnoremap <leader>m :!make<CR>
 nnoremap <leader>M :!make all<CR><CR>
 nnoremap <leader>mt :!make test<CR>
 
+<<<<<<< HEAD
 "Colorscheme
 "colorscheme morning 
 "colorscheme evening 
 "colorscheme darkblue
 "colorscheme desert
+=======
+" Colorscheme
+
+"colorscheme morning 
+"colorscheme evening 
+"colorscheme darkblue
+colorscheme desert
+>>>>>>> ff15932dfea4a986d37c7bfaf6d6fa22dadb2bf3
 
 "Ctags to look in cwd
 set tags=./tags,tags
