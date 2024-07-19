@@ -118,11 +118,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 
 "create the tags file (may need to install ctags first)
 command! MakeTags !ctags -R
@@ -232,6 +227,14 @@ Plug 'preservim/tagbar' "browse the tags file
 Plug 'jiangmiao/auto-pairs' "auto close
 Plug 'https://github.com/Var7600/vim-commands'
 call plug#end()
+
+"Syntastic config
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
 
 "tagar 
 nmap <F8> :TagbarToggle<CR>
