@@ -87,7 +87,7 @@ nnoremap <leader>mt :!make test<CR>
 "colorscheme morning 
 "colorscheme evening 
 "colorscheme darkblue
-colorscheme desert
+"colorscheme desert
 >>>>>>> ff15932dfea4a986d37c7bfaf6d6fa22dadb2bf3
 
 "Ctags to look in cwd
