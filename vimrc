@@ -75,20 +75,13 @@ nnoremap <leader>m :!make<CR>
 nnoremap <leader>M :!make all<CR><CR>
 nnoremap <leader>mt :!make test<CR>
 
-<<<<<<< HEAD
 "Colorscheme
-"colorscheme morning 
-"colorscheme evening 
-"colorscheme darkblue
-"colorscheme desert
-=======
-" Colorscheme
 
 "colorscheme morning 
 "colorscheme evening 
 "colorscheme darkblue
 "colorscheme desert
->>>>>>> ff15932dfea4a986d37c7bfaf6d6fa22dadb2bf3
+colorscheme gruvbox "change color theme
 
 "Ctags to look in cwd
 set tags=./tags,tags
@@ -263,7 +256,6 @@ let g:floaterm_autoclose=2
 "fzf mapping
 nnoremap <C-f> :Files<Cr>
 
-colorscheme gruvbox "change color theme
 
 "syntastic plugin error navigation
 nnoremap <silent> <leader>n :lprevious<CR>
