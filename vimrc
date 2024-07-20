@@ -75,13 +75,6 @@ nnoremap <leader>m :!make<CR>
 nnoremap <leader>M :!make all<CR><CR>
 nnoremap <leader>mt :!make test<CR>
 
-"Colorscheme
-
-"colorscheme morning 
-"colorscheme evening 
-"colorscheme darkblue
-"colorscheme desert
-colorscheme gruvbox "change color theme
 
 "Ctags to look in cwd
 set tags=./tags,tags
@@ -220,6 +213,14 @@ Plug 'preservim/tagbar' "browse the tags file
 Plug 'jiangmiao/auto-pairs' "auto close
 Plug 'https://github.com/Var7600/vim-commands'
 call plug#end()
+
+"Colorscheme
+
+"colorscheme morning 
+"colorscheme evening 
+"colorscheme darkblue
+"colorscheme desert
+colorscheme gruvbox "change color theme
 
 "Syntastic config
 let g:syntastic_always_populate_loc_list = 1
