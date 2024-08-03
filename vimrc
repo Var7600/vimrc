@@ -38,6 +38,7 @@ set cursorline "Highlight cursor line underneath the cursor horizontally
 set signcolumn=auto "add one more column to the left
 "set cursorcolumn "Highlight cursor line underneath the cursor vertically
 set colorcolumn=80
+set textwidth=80 "wrap text to 80 characters
 set smartindent
 set noerrorbells
 set smartcase
