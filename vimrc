@@ -76,13 +76,6 @@ nnoremap <leader>m :!make<CR>
 nnoremap <leader>M :!make all<CR><CR>
 nnoremap <leader>mt :!make test<CR>
 
-"Colorscheme
-
-"colorscheme morning 
-"colorscheme evening 
-"colorscheme darkblue
-"colorscheme desert
-colorscheme gruvbox "change color theme
 
 "Ctags to look in cwd
 set tags=./tags,tags
@@ -222,6 +215,14 @@ Plug 'jiangmiao/auto-pairs' "auto close
 Plug 'https://github.com/Var7600/vim-commands'
 call plug#end()
 
+"Colorscheme
+
+"colorscheme morning 
+"colorscheme evening 
+"colorscheme darkblue
+"colorscheme desert
+colorscheme gruvbox "change color theme
+
 "Syntastic config
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -259,8 +260,8 @@ nnoremap <C-f> :Files<Cr>
 
 
 "syntastic plugin error navigation
-nnoremap <silent> <leader>n :lprevious<CR>
-nnoremap <silent> <leader>m :lnext<CR>
+nnoremap <silent> <leader>l :lprevious<CR>
+nnoremap <silent> <leader>; :lnext<CR>
 
 
 " If Vim version is equal to or greater than 7.3 enable undofile.
