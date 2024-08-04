@@ -213,6 +213,7 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'preservim/tagbar' "browse the tags file
 Plug 'jiangmiao/auto-pairs' "auto close
 Plug 'https://github.com/Var7600/vim-commands'
+Plug 'https://github.com/manasthakur/vim-sessionist' "manage vim session
 call plug#end()
 
 "Colorscheme
