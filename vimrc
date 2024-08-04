@@ -55,7 +55,8 @@ set autowrite " Automatically save
 "easier moving of block of code
 vnoremap < <gv "better indentation
 vnoremap > >gv "better indentation
-
+" Copy till end-of-line using Y
+nnoremap Y y$
 "move lines with ctrl + j/k
 nnoremap <C-j> :m -2<CR>
 nnoremap <C-k> :m +1<CR>
