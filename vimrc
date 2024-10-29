@@ -108,7 +108,7 @@ set statusline+=%*
 
 
 "create the tags file (may need to install ctags first)
-command! MakeTags !ctags -R
+command! MakeTags !ctags . & 
 
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
