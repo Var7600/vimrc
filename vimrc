@@ -216,6 +216,7 @@ Plug 'jiangmiao/auto-pairs' "auto close
 Plug 'https://github.com/Var7600/vim-commands'
 Plug 'https://github.com/manasthakur/vim-sessionist' "manage vim session
 Plug 'https://github.com/tpope/vim-endwise' "auto close some structures
+Plug 'girishji/vimcomplete' "auto complete feature
 call plug#end()
 
 
