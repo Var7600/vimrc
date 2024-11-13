@@ -1,3 +1,5 @@
 ^.*~$
 *.backup
 *.swp
+.install.sh.un~
+.vimrc.un~
