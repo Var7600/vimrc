@@ -30,6 +30,7 @@ set nohlsearch "disable highlighting after search
 set autoindent
 set incsearch " While searching though a file incrementally highlight matching characters as you type.
 set number "set line number
+set relativenumber "set relative number
 set history=200 " Set the commands to save in history default number is 20.
 
 set nrformats-=octal
