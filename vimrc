@@ -26,7 +26,6 @@ set clipboard=unamedplus
 
 set nocompatible " Disable compatibility with vi which can cause unexpected issues.
 set hlsearch " Use highlighting when doing a search.  
-set nohlsearch "disable highlighting after search
 set autoindent
 set incsearch " While searching though a file incrementally highlight matching characters as you type.
 set number "set line number
