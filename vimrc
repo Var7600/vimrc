@@ -218,6 +218,7 @@ Plug 'https://github.com/manasthakur/vim-sessionist' "manage vim session
 Plug 'https://github.com/tpope/vim-endwise' "auto close some structures
 Plug 'girishji/vimcomplete' "auto complete feature
 Plug 'https://github.com/krischik/vim-ada' "ada plugin
+Plug 'https://github.com/jalvesaq/vimcmdline' "run language interpreter
 call plug#end()
 
 
