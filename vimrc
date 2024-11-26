@@ -99,8 +99,6 @@ set path+=**
 "Display all matching files when tab complete
 set wildmenu
 
-"plugin syntastic
-execute pathogen#infect()
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
