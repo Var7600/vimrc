@@ -2,8 +2,6 @@
 #install vim & vim-runtime
 sudo apt install vim vim-runtime -y
 
-#vim directory
-mkdir ~/.vim && mkdir ~/.vim/autoload
 #download vim plug
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
