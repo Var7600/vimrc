@@ -194,29 +194,51 @@ nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 call plug#begin()
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+"to comment source code
 Plug 'https://github.com/tpope/vim-commentary'
+"airline
 Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'https://github.com/pangloss/vim-javascript.git' "javascript plugins provide syntax highlighting and improved indentation
-Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} "python mode on vim
-Plug 'gruvbox-community/gruvbox' "theme gruvbox
-Plug 'https://github.com/yegappan/mru' "open last recents files
+"javascript plugins provide syntax highlighting and improved indentation
+Plug 'https://github.com/pangloss/vim-javascript.git' 
+"python mode on vim
+Plug 'python-mode/python-mode',{'for': 'python' , 'branch': 'develop'} 
+"theme gruvbox
+Plug 'gruvbox-community/gruvbox' 
+"open last recents files
+Plug 'https://github.com/yegappan/mru' 
+"syntastic lsp
 Plug 'scrooloose/syntastic'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
-Plug 'xuhdev/vim-latex-live-preview'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+" Floating terminal
 Plug 'https://github.com/voldikss/vim-floaterm'
-Plug 'https://github.com/godlygeek/tabular' "Tabular align pattern
+"Tabular align pattern
+Plug 'https://github.com/godlygeek/tabular' 
+" FZF fuzzy finder
 Plug 'junegunn/fzf',{ 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" Vim fugitive
 Plug 'tpope/vim-fugitive'
+" Generate Taglist
 Plug 'vim-scripts/taglist.vim'
-Plug 'preservim/tagbar' "browse the tags file
-Plug 'jiangmiao/auto-pairs' "auto close
+"browse the tags file
+Plug 'preservim/tagbar'
+"auto close
+Plug 'jiangmiao/auto-pairs' 
+"vim shortcuts
 Plug 'https://github.com/Var7600/vim-commands'
-Plug 'https://github.com/manasthakur/vim-sessionist' "manage vim session
-Plug 'https://github.com/tpope/vim-endwise' "auto close some structures
-Plug 'girishji/vimcomplete' "auto complete feature
-Plug 'https://github.com/krischik/vim-ada' "ada plugin
-Plug 'https://github.com/jalvesaq/vimcmdline' "run language interpreter
+"manage vim session
+Plug 'https://github.com/manasthakur/vim-sessionist'
+"auto close some structures
+Plug 'https://github.com/tpope/vim-endwise' 
+"auto complete feature
+Plug 'girishji/vimcomplete' 
+"ada plugin
+Plug 'https://github.com/krischik/vim-ada' 
+"run language interpreter
+Plug 'https://github.com/jalvesaq/vimcmdline' 
+"bats syntax highlithing
+Plug 'aliou/bats.vim'
 call plug#end()
 
 
