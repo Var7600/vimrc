@@ -241,6 +241,8 @@ Plug 'https://github.com/jalvesaq/vimcmdline'
 Plug 'aliou/bats.vim'
 call plug#end()
 
+set omnifunc=syntaxcomplete#Complete
+packadd vimcomplete
 
 "Colorscheme
 
