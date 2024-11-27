@@ -239,6 +239,8 @@ Plug 'https://github.com/krischik/vim-ada'
 Plug 'https://github.com/jalvesaq/vimcmdline' 
 "bats syntax highlithing
 Plug 'aliou/bats.vim'
+"tab auto complete
+Plug 'ervandew/supertab'
 call plug#end()
 
 set omnifunc=syntaxcomplete#Complete
