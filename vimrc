@@ -241,6 +241,30 @@ Plug 'https://github.com/jalvesaq/vimcmdline'
 Plug 'aliou/bats.vim'
 "tab auto complete
 Plug 'ervandew/supertab'
+"few commands to switch between source files and header files quickly.
+Plug 'https://github.com/thindil/a.vim'
+" :A switches to the header file corresponding to the current file being edited (or vise versa)
+" :AS splits and switches
+" :AV vertical splits and switches
+" :AT new tab and switches
+" :AN cycles through matches
+" :IH switches to file under cursor
+" :IHS splits and switches
+" :IHV vertical splits and switches
+" :IHT new tab and switches
+" :IHN cycles through matches
+" <Leader>ih switches to file under cursor
+" <Leader>is switches to the alternate file of file under cursor (e.g. on  <foo.h> switches to foo.cpp)
+" <Leader>ihn cycles through matches
+" 
+" E.g. if you are editing foo.c and need to edit foo.h simply execute :A and you will be editing foo.h, to switch back to foo.c execute :A again.
+" 
+" Can be configured to support a variety of languages. Built-in support for C, C++ and ADA95
+Plug 'https://github.com/pseewald/vim-anyfold'
+"auto regenerated tags file
+Plug 'https://github.com/ludovicchabant/vim-gutentags'
+"displaying thin vertical lines at each indentation level for code indented with spaces
+Plug 'https://github.com/Yggdroot/indentLine'
 call plug#end()
 
 set omnifunc=syntaxcomplete#Complete
@@ -293,6 +317,14 @@ nnoremap <C-f> :Files<Cr>
 nnoremap <silent> <leader>l :lprevious<CR>
 nnoremap <silent> <leader>; :lnext<CR>
 
+"anyfold plugin config
+autocmd Filetype * AnyFoldActivate               " activate for all filetypes
+set foldlevel=0  " close all folds
+ "Use key combinations [[ and ]] to navigate to the beginning and end of the current open fold. 
+ "Use ]k and [j to navigate to the end of the previous block and to the beginning of the next block.
+ 
+ "hi Folded term=underline if not folding highlighted
+"foldmethod=expr to change fold method
 
 " If Vim version is equal to or greater than 7.3 enable undofile.
 " This allows you to undo changes to a file even after saving it.
@@ -301,6 +333,12 @@ if version >= 703
     set undofile
     set undoreload=10000
 endif
+
+"indentLile config
+let g:indentLine_char = '┆'
+let g:indentLine_enabled = 1
+set list lcs=tab:\|\ "(here is a space)
+":IndentLinesToggle toggles lines on and off.
 
 "let g:airline#extensions#tabline#enabled = 1
 
