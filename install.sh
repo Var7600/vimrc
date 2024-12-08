@@ -14,5 +14,10 @@ fi
 
 mv ./vimrc ~/.vimrc
 
+# install jflex syntax highlighting
+if [ ! -d ~/vim/syntax ];then
+	mkdir -p ~/vim/syntax && cp ./jflex.vim ~/vim/syntax/
+fi
+
 #install plugins
 vim -c 'PlugInstall'

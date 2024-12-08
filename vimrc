@@ -269,8 +269,13 @@ call plug#end()
 
 set omnifunc=syntaxcomplete#Complete
 
-"Colorscheme
+"jflex syntax
+augroup filetype                                                     
+   au BufRead,BufNewFile *.flex,*.jflex    set filetype=jflex         
+ augroup END                                                          
+ au Syntax jflex    so ~/.vim/syntax/jflex.vim                     
 
+ 
 "colorscheme morning 
 "colorscheme evening 
 "colorscheme darkblue
