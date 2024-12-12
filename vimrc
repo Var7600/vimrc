@@ -196,8 +196,6 @@ call plug#begin()
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 "to comment source code
 Plug 'https://github.com/tpope/vim-commentary'
-"vim markdown
-Plug 'tpope/vim-markdown'
 "airline
 Plug 'https://github.com/vim-airline/vim-airline'
 "javascript plugins provide syntax highlighting and improved indentation
@@ -212,7 +210,9 @@ Plug 'https://github.com/yegappan/mru'
 Plug 'scrooloose/syntastic'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-" Floating terminal
+" markdown plugin
+Plug 'gabrielelana/vim-markdown' 
+"Floating terminal
 Plug 'https://github.com/voldikss/vim-floaterm'
 "Tabular align pattern
 Plug 'https://github.com/godlygeek/tabular' 
