@@ -265,6 +265,8 @@ Plug 'https://github.com/pseewald/vim-anyfold'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
 "displaying thin vertical lines at each indentation level for code indented with spaces
 Plug 'https://github.com/Yggdroot/indentLine'
+"Distraction-free writing in Vim.
+Plug 'https://github.com/junegunn/goyo.vim'
 call plug#end()
 
 set omnifunc=syntaxcomplete#Complete
@@ -317,6 +319,8 @@ let g:floaterm_autoclose=2
 "fzf mapping
 nnoremap <C-f> :Files<Cr>
 
+"Goyo
+map <C-g>:Goyo 120<CR>
 
 "syntastic plugin error navigation
 nnoremap <silent> <leader>l :lprevious<CR>
