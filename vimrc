@@ -322,7 +322,7 @@ let g:floaterm_autoclose=2
 nnoremap <C-f> :Files<Cr>
 
 "Goyo
-map <C-g>:Goyo 120<CR>
+map <C-g> :Goyo 120<CR>
 
 "syntastic plugin error navigation
 nnoremap <silent> <leader>l :lprevious<CR>
