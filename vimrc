@@ -314,7 +314,7 @@ let Tlist_Auto_Highlight_Tag = 1
 "let g:floaterm_keymap_new= '<>'
 let g:floaterm_keymap_toggle= '<C-t>'
 let g:floaterm_width=0.8
-let g:floaterm_autoclose=2
+let g:floaterm_autoclose=1
 
 "fzf mapping
 nnoremap <C-f> :Files<Cr>
