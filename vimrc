@@ -210,8 +210,6 @@ Plug 'https://github.com/yegappan/mru'
 Plug 'scrooloose/syntastic'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-" markdown plugin
-Plug 'gabrielelana/vim-markdown' 
 "Floating terminal
 Plug 'https://github.com/voldikss/vim-floaterm'
 "Tabular align pattern
