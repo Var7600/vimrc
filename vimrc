@@ -296,10 +296,10 @@ let g:syntastic_warning_symbol = "⚠"
 nmap <F8> :TagbarToggle<CR>
 
 " Show tags
-noremap t :TlistToggle
+noremap t :TlistToggle<CR>
 
 " Reveal in taglist
-nmap t :TlistHighlightTag
+noremap <C-h> :TlistHighlightTag<CR>
 
 "taglist config
 let Tlist_Show_One_File = 1  
