@@ -80,7 +80,9 @@ nnoremap <leader>mt :!make test<CR>
 
 "Ctags to look in cwd
 set tags=./tags,tags
-
+"Highlighting Whitespace in Vim
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 set shiftwidth=2 "number of spaces to use for indenting
 set softtabstop=2 "number of tabs to use for indenting
@@ -210,7 +212,7 @@ Plug 'https://github.com/yegappan/mru'
 Plug 'scrooloose/syntastic'
 " A Vim Plugin for Lively Previewing LaTeX PDF Output
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-"Floating terminal
+" Floating terminal
 Plug 'https://github.com/voldikss/vim-floaterm'
 "Tabular align pattern
 Plug 'https://github.com/godlygeek/tabular' 
@@ -265,19 +267,19 @@ Plug 'https://github.com/pseewald/vim-anyfold'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
 "displaying thin vertical lines at each indentation level for code indented with spaces
 Plug 'https://github.com/Yggdroot/indentLine'
-"Distraction-free writing in Vim.
-Plug 'https://github.com/junegunn/goyo.vim'
+"image viewer
+Plug 'qaiviq/vim-imager'
 call plug#end()
 
 set omnifunc=syntaxcomplete#Complete
 
-"jflex syntax
-augroup filetype                                                     
-   au BufRead,BufNewFile *.flex,*.jflex    set filetype=jflex         
- augroup END                                                          
- au Syntax jflex    so ~/.vim/syntax/jflex.vim                     
+augroup filetype
+ au BufRead,BufNewFile *.flex,*.jflex    set filetype=jflex
+augroup END
+au Syntax jflex    so ~/.vim/syntax/jflex.vim
 
- 
+"Colorscheme
+
 "colorscheme morning 
 "colorscheme evening 
 "colorscheme darkblue
@@ -319,8 +321,6 @@ let g:floaterm_autoclose=1
 "fzf mapping
 nnoremap <C-f> :Files<Cr>
 
-"Goyo
-map <C-g> :Goyo 120<CR>
 
 "syntastic plugin error navigation
 nnoremap <silent> <leader>l :lprevious<CR>
