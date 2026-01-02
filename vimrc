@@ -52,9 +52,9 @@ set foldmethod=indent " adding folding
 set foldlevel=99 "commad za/zm
 set timeoutlen=4000 "change timeout keymapping f 1s to 4s(4000 ms)
 set autowrite " Automatically save 
-"easier moving of block of code
-vnoremap < <gv "better indentation
-vnoremap > >gv "better indentation
+"easier moving of block of code (Identation)
+vnoremap < <gv 
+vnoremap > >gv  
 " Copy till end-of-line using Y
 nnoremap Y y$
 "move lines with ctrl + j/k
