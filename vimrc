@@ -287,6 +287,10 @@ au Syntax jflex    so ~/.vim/syntax/jflex.vim
 colorscheme habamax
 "colorscheme gruvbox 
 
+"use gruvbox when working with markdown
+autocmd FileType markdown colorscheme gruvbox
+
+
 "Syntastic config
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
