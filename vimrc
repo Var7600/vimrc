@@ -22,7 +22,7 @@ set spelllang=en_us,fr
 "imap <leader>g <<>>
 
 "clipboard
-set clipboard=unamedplus
+set clipboard=unnamedplus
 
 set nocompatible " Disable compatibility with vi which can cause unexpected issues.
 set hlsearch " Use highlighting when doing a search.  
